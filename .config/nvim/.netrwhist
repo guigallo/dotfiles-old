@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/guigallo/git/roam/components/BottomButtons'
+let g:netrw_dirhist_1='/home/guigallo/git/roam'
+let g:netrw_dirhist_0='/home/guigallo/git/roam/components'
+let g:netrw_dirhist_9='/home/guigallo/git/roam'
+let g:netrw_dirhist_8='/home/guigallo/git'
+let g:netrw_dirhist_7='/home/guigallo/git/roam'
+let g:netrw_dirhist_6='/home/guigallo/git/roam/data'
+let g:netrw_dirhist_5='/home/guigallo/git/roam'
+let g:netrw_dirhist_4='/home/guigallo/git/roam/components'
+let g:netrw_dirhist_3='/home/guigallo/git/roam/components/MediaCenter'

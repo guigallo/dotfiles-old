@@ -1,0 +1,6 @@
+{
+  "stylelint.enable": true,
+  "stylelintplus.enable": true,
+  "stylelintplus.autoFixOnFormat": true,
+  "stylelintplus.autoFixOnSave": true
+}
