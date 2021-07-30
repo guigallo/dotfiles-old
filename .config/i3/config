@@ -218,10 +218,16 @@ bar {
      -m \
         pomodoro weather \
         sensors cpu memory nvidiagpu disk nic \
-        xrandr pasink pasource time date \
+        xrandr pasink pasource time date dunst \
      -p \
+        pomodoro.notify="notify-send 'Time up!'" \
         weather.showminmax="true" \
         sensors.show_freq="false" \
+        cpu.format="{:3.0f}%" \
+        memory.format="{percent:.0f}% {used} used" \
+        nvidiagpu.format="GPU {temp}°C" \
+        disk.open="xdg-open ." \
+        disk.format="{percent:.02f}% of {size}" \
         nic.states="^down" nic.format="{ip}" \
         time.format="%H:%M" \
      -t dracula-powerline
