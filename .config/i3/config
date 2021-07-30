@@ -13,7 +13,7 @@ bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
 # font
-font pango:FiraCode Nerd Font, FontAwesome 11
+font pango:FiraCode Nerd Font, FontAwesome 12
 
 # terminal
 bindsym $mod+Return exec alacritty
@@ -129,7 +129,8 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open specific applications in floating mode
-for_window [class="Picture-in-Picture"] floating enable sticky enable border none
+for_window [title="Picture-in-Picture"] sticky enable, border none
+for_window [title="Discord"] move container to workspace $ws3
 
 # switch to workspace with urgent window automatically
 # for_window [urgent=latest] focus
@@ -211,7 +212,19 @@ bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 
 bar {
-        status_command i3status
+    # status_command i3status
+
+    status_command bumblebee-status \
+     -m \
+        pomodoro weather \
+        sensors cpu memory nvidiagpu disk nic \
+        xrandr pasink pasource time date \
+     -p \
+        weather.showminmax="true" \
+        sensors.show_freq="false" \
+        nic.states="^down" nic.format="{ip}" \
+        time.format="%H:%M" \
+     -t dracula-powerline
 }
 
 # to do
