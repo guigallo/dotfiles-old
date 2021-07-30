@@ -216,13 +216,13 @@ bar {
 
     status_command bumblebee-status \
      -m \
-        playerctl pomodoro weather \
+        playerctl pomodoro \
         sensors cpu memory nvidiagpu disk nic \
         xrandr docker_ps \
         pasink pasource time date dunst \
      -p \
+        playerctl.layout="playerctl.pause,playerctl.song" \
         pomodoro.notify="notify-send 'Time up!'" \
-        weather.showcity="false" weather.showminmax="true" \
         sensors.show_freq="false" \
         cpu.format="{:3.0f}%" \
         memory.format="{percent:.0f}% {used} used" \
