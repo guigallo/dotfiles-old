@@ -189,8 +189,8 @@ mode "resize" {
 exec_always --no-startup-id fix_xcursor
 exec_always setxkbmap -layout us -variant intl
 
-# class                 border  backgr. text    indicator child_border
-# client.focused          #272827 #272827 #657b83 #272827 #272827
+# class                   border  backgr. text    indicator child_border
+client.focused            #6272a4 #6272a4 #657b83 #6272a4 #6272a4
 # client.focused_inactive #272827 #272827 #657b83 #272827 #272827
 # client.unfocused        #272827 #272827 #657b83 #272827 #272827
 # client.urgent           #272827 #272827 #657b83 #272827 #272827
@@ -213,6 +213,15 @@ bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 
 bar {
     # status_command i3status
+
+    colors {
+        background #282a36
+
+        focused_workspace  #f8f8f2 #6272a4
+        active_workspace   #f8f8f2 #6272a4
+        inactive_workspace #f8f8f2 #282a36
+        urgent_workspace   #44475a #ff5555
+    }
 
     status_command bumblebee-status \
      -m \
