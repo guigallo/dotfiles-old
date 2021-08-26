@@ -239,7 +239,7 @@ bar {
         disk.open="xdg-open ." disk.format="{percent:.02f}% of {size}" \
         nic.states="^down" nic.format="{ip}" \
         time.format="%H:%M" \
-     -t dracula-powerline
+     -t nord-powerline
 }
 
 # to do

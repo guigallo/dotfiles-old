@@ -31,7 +31,8 @@ set wildmenu
 set wildignore=*/node_modules/*,*/.next/*
 
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
@@ -40,6 +41,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'rstacruz/vim-closer'
 Plug 'pangloss/vim-javascript'
+Plug 'rust-lang/rust.vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -47,11 +49,11 @@ Plug 'stylelint/stylelint'
 call plug#end()
 
 " themes
-colorscheme gruvbox
+colorscheme nord
 highlight Normal guibg=NONE ctermbg=NONE
 " highlight ColorColumn guibg=#282a36
 let g:lightline = {
-  \ 'colorscheme': 'gruvbox',
+  \ 'colorscheme': 'nord',
   \ 'active': {
   \   'left': [ ['mode', 'paste'],
   \             ['gitbranch', 'readyonly', 'filename', 'modified'] ]
