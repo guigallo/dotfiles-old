@@ -131,6 +131,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # Open specific applications in floating mode
 for_window [title="Picture-in-Picture"] sticky enable, border none
 for_window [title="Discord"] move container to workspace $ws3
+for_window [title="dev-scratchpad"] move scratchpad
 
 # switch to workspace with urgent window automatically
 # for_window [urgent=latest] focus
